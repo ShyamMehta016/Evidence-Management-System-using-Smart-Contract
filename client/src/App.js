@@ -1,22 +1,18 @@
-import React from "react";
-import {auth} from './services/firebase.js'
-import { useAuthState } from 'react-firebase-hooks/auth'
-import Main from "./container/Main";
-import Login from "./pages/Login";
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home';
+import Police from './pages/Police';
+import Public from './pages/Public';
 
-export default function App() {
-
-  const [user] = useAuthState(auth);
-
-  return (
-    <div className="font-montserrat">
-
-      {user ?
-        <Main />
-        :
-        <Login />
-      }
-    </div>
-
-  );
+function App() {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/police" element={<Police />} />
+                <Route path="/public" element={<Public />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
+
+export default App;

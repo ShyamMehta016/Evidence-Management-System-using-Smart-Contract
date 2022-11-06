@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from '../components/Navbar';
 import Home from '../pages/Home';
+import File from '../pages/File';
+import Close from '../pages/Close';
 
 function Main() {
     return (
@@ -8,6 +10,8 @@ function Main() {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/file" element={<File />} />
+                <Route path="/close" element={<Close />} />
             </Routes>
         </BrowserRouter>
     );

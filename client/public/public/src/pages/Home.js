@@ -2,13 +2,11 @@ import React from "react"
 import HeroImg from '../assets/hero.svg'
 import InspirationImg from '../assets/inspiration.svg'
 import { Link } from 'react-router-dom';
-import Navbar from "../components/Navbar";
 
 export default function Home() {
 
   return (
     <div>
-      <Navbar />
       <div className='md:mx-28 mx-4 text-white py-10'>
 
         <div className='md:grid md:grid-cols-2 items-center'>

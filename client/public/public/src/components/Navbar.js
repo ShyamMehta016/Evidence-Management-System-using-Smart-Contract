@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
+import { auth } from '../services/firebase';
 
 export default function Navbar() {
 
@@ -9,7 +10,7 @@ export default function Navbar() {
     return (
         <div >
             <nav className="flex items-center py-2 flex-wrap px-4 text-fontColor tracking-wider">
-                <Link to="/"><span className="p-2 mr-4 inline-flex items-center text-4xl cursor-pointer font-base text-white">Evidence Management System using Smart Contract
+                <Link to="/"><span className="p-2 mr-4 inline-flex items-center text-3xl cursor-pointer font-base text-white">Evidence Management System using Smart Contract
                 </span></Link>
                 <button className="lg:hidden right-0 absolute md:px-8 px-6 mr-1 mb-1 ease-linear transition-all duration-150" type="button" onClick={() => setShowNavbar(true)} aria-hidden="false" aria-label="button">
                     <HiOutlineMenuAlt3 className="h-7 w-7" aria-hidden="false" />
@@ -44,14 +45,6 @@ export default function Navbar() {
                                             <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">Home</span>
                                         </Link>
 
-                                        <Link to="/police">
-                                            <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">Police Portal</span>
-                                        </Link>
-
-                                        <Link to="/public">
-                                            <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">Public Portal</span>
-                                        </Link>
-
                                     </div>
                                 </div>
                             </div>
@@ -68,13 +61,17 @@ export default function Navbar() {
                             <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">Home</span>
                         </Link>
 
-                        <Link to="/police">
-                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">Police Login</span>
+                        <Link to="/file">
+                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">File FIR</span>
                         </Link>
 
-                        <Link to="/public">
-                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">Public Login</span>
+                        <Link to="/status">
+                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">View Status</span>
                         </Link>
+
+                        <button className='bg-[#6F5DE0] text-white py-2 px-8 rounded-md' onClick={() => auth.signOut()}>
+                            Logout
+                        </button>
 
                     </div>
                 </div>
