@@ -1,13 +1,13 @@
 import firebase from 'firebase'
 
 const app = firebase.initializeApp({
-  apiKey: "AIzaSyAl6n-Ws-btSCuonsJCgMlspW6sEg3kkXI",
-  authDomain: "good-space-1b61c.firebaseapp.com",
-  projectId: "good-space-1b61c",
-  storageBucket: "good-space-1b61c.appspot.com",
-  messagingSenderId: "225114188693",
-  appId: "1:225114188693:web:1a5393ab7115b6f759649c",
-  measurementId: "G-6LPVK0DSSR"
+  apiKey: "AIzaSyAyFUfZwvCjiDCvUDXxzSvrKIID7edZ2Zw",
+  authDomain: "evidencemanagementsystempublic.firebaseapp.com",
+  projectId: "evidencemanagementsystempublic",
+  storageBucket: "evidencemanagementsystempublic.appspot.com",
+  messagingSenderId: "788512726574",
+  appId: "1:788512726574:web:c41ffe4dfd02e61c2c49bf",
+  measurementId: "G-GEXMW0979R"
 })
 
 const firestore = firebase.firestore()
