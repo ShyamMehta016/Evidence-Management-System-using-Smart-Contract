@@ -14,7 +14,7 @@ export default function Home() {
         <div className='md:grid md:grid-cols-2 items-center'>
           <div className=''>
             <h1 className='text-3xl md:text-6xl'>Who we are</h1>
-            <p className='text-xl md:text-2xl py-4 tracking-wider'>About application</p>
+            <p className='text-xl md:text-2xl py-4 tracking-wider text-justify'>As more and more automobiles become linked and a part of the Internet of Things ecosystem, the digital collection and preservation of accident-related information is becoming increasingly important. In order to examine the future of accident investigation forensics in the connected vehicle era, a conceptual evidence management paradigm is developed.</p>
 
           </div>
           <div className="grid place-items-center py-4 drop-shadow-3xl shadow-black">

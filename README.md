@@ -29,7 +29,7 @@ npm start
 y
 ``` 
 
-## About application
+## As more and more automobiles become linked and a part of the Internet of Things ecosystem, the digital collection and preservation of accident-related information is becoming increasingly important. In order to examine the future of accident investigation forensics in the connected vehicle era, a conceptual evidence management paradigm is developed.
 
 ## What else do we have(in points)
 

@@ -16,9 +16,9 @@ export default function Status() {
       <div className='flex flex-wrap items-center justify-around space-x-4 space-y-4'>
 
         <div className='bg-white w-72 p-4 rounded-lg shadow-lg'>
-          <h1 className='text-2xl font-bold text-gray-800'>File No: 3356</h1>
+          <h1 className='text-2xl font-bold text-gray-800'>File No: 3355</h1>
           <div className='bg-blue-500 h-1 w-will my-2 rounded-lg'></div>
-          <h1 className='text-xl font-bold text-gray-800'>Filed On: 22-05-22</h1>
+          <h1 className='text-xl font-bold text-gray-800'>Filed On: 12-11-22</h1>
           <h1 className='text-xl font-bold text-gray-800'>Status: Pending</h1>
           <button className='bg-blue-500 text-white px-4 py-2 rounded-lg mt-4' onClick={() => setShowNavbar(true)}>View Details</button>
           {showNavbar ? (
@@ -30,7 +30,7 @@ export default function Status() {
                     <div className="flex items-start justify-between p-5 border-solid rounded-t">
                       <div className="text-2xl font-base tracking-wide cursor-pointer">
                         {/* Add file name */}
-                        File Name: 3356
+                        File Name: 3355
                       </div>
 
                       <button className="absolute right-6" onClick={() => setShowNavbar(false)} aria-hidden="false" aria-label="button">
@@ -45,12 +45,12 @@ export default function Status() {
 
                     <div className="grid text-left  text-xl p-2 gap-2 w-full mb-4"
                     >
-                      <h1 className='text-xl font-bold text-gray-800'>File No: 3356</h1>
-                      <h1 className='text-xl font-bold text-gray-800'>Date: 22-05-22</h1>
+                      <h1 className='text-xl font-bold text-gray-800'>File No: 3355</h1>
+                      <h1 className='text-xl font-bold text-gray-800'>Date: 12-11-22</h1>
                       <h1 className='text-xl font-bold text-gray-800'>Place: Delhi</h1>                      
-                      <h1 className='text-xl font-bold text-gray-800'>Officer Assigned: Bhalu</h1>
-                      <h1 className='text-xl font-bold text-gray-800'>Incident Details: lorn....</h1>
-                      <h1 className='text-xl font-bold text-gray-800'>Description: A Bear with no beard</h1>
+                      <h1 className='text-xl font-bold text-gray-800'>Officer Assigned: Rajvir Gupta</h1>
+                      <h1 className='text-xl font-bold text-gray-800'>Incident Details: Theft.</h1>
+                      <h1 className='text-xl font-bold text-gray-800'>Description: 2 people</h1>
                     </div>
                   </div>
                 </div>
